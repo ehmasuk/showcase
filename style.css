@@ -150,7 +150,7 @@ p {
 .showcase-showbook-section::before {
     position: absolute;
     content: "";
-    background: linear-gradient(180deg, rgb(42, 39, 218), rgb(0, 204, 255));
+    background: linear-gradient(180deg, #2a27da, #00ccff);
     height: 110%;
     width: 100%;
     left: 0;
@@ -279,7 +279,66 @@ p {
 
 
 
+
+
+
+.soldbook-topbar{
+    position: sticky;
+    left: 0;
+    top: 0;
+    padding: 20px 0;
+    background: #F6F6F7;
+    width: 100%;
+    z-index: 99;
+    background:#fff;
+    box-shadow: #00122e29 0px 8px 6px 0px;
+}
+.soldbook-topbar .soldbook-get-btn{
+    background: #44BBA4;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 5px 20px;
+}
+.soldbook-topbar .progress{
+    height: 20px;
+    border-radius: 50px;
+}
+.soldbook-topbar .progress-bar{
+    border-radius: 50px;
+    background: #44BBA4;
+}
+.soldbook-topbar .range p{
+    font-size: 18px;
+    font-weight: 500;
+    color: #4A4A68;
+}
+.soldbook-get-btn-txt{
+    color: #44BBA4;
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.referbook-gif{
+    width: 150px;
+    margin-right: 20px;
+}
+
+.top-sold-book-des{
+    max-width: 600px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
 @media only screen and (max-width: 768px){
+    /* topbar */
+    .referbook-gif{
+        display: none;
+    }
+
+
 
 
     .showcase-hero-section .showcase-hero-img{
