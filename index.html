@@ -21,9 +21,73 @@
 
 
 
+
+        <!-- payment popup -->
+        <div class="latest-payement-popup-wraper">
+            <div class="latest-payment-popup">
+                <h1>Desbloquea Todas Las Funciones Y Comienza A Usarlas En Menos De 60 Segundos</h1>
+                <div class="pop">
+                    <i class="fas fa-times"></i>
+                    <div class="radio">
+                        <div class="single-option">
+                            <p class="title">Pequeñas empresas - Mensual</p>
+                            <p class="per">$20 <span>Ahorra 70%</span></p>
+                            <p class="des">Prueba de 7 días gratis, libre de riesgo</p>
+                            <p class="des">Cancela cuando quieras</p>
+                        </div>
+                    </div>
+                    <form action="">
+                        <label class="head" for="">Direccion</label>
+                        <input type="text" placeholder="Plaza Pablo Ruiz Picasso, 30">
+                        <label class="head" for="">Ingresa tu tarjeta de crédito o débito</label>
+                        <input type="text">
+                        <input type="submit" class="submit-btn" value="Empezar mi prueba gratis">
+                    </form>
+                    <div class="c-right">
+                        Actualizandote a la versión superior, aceptas 
+                        <a href="#">Política de privacidad</a> y <a href="#">Términos y condiciones.</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- sold book topbar -->
         <div class="soldbook-topbar">
 
             <div class="container">
+                <i class="fas fa-times"></i>
                 <div class="d-flex">
                     <img src="img/girl.gif" alt="" class="referbook-gif">
                     <div class="w-100">
@@ -32,8 +96,8 @@
                                 <h4 class="mb-2">Danos una mano</h4>
                                 <p class="top-sold-book-des">Fomentamos la lectura en escuelas primarias de Latinoamérica y contribuimos a mejorar las condiciones escolares de los peques aportando material escolar.</p>
                             </div>
-                            <div class="text-center" style="min-width: 180px;">
-                                <button class="btn btn-success mb-2 soldbook-get-btn">Contribuir ahora</button>
+                            <div class="text-right" style="min-width: 180px;">
+                                <button class="btn btn-success mb-2 soldbook-get-btn openShowcasePopupPayment">Contribuir ahora</button>
                                 <p class="soldbook-get-btn-txt">Progreso 75%</p>
                             </div>
                         </div>
@@ -42,7 +106,7 @@
                             <p>500</p>
                         </div>
                         <div class="progress">
-                            <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                            <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
                         </div>
                     </div>
                 </div>
@@ -84,15 +148,15 @@
                         </div>
                     </div>
 
-                    <button class="sale-btn btn">Contribuir ahora</button>
+                    <button class="sale-btn btn openShowcasePopupPayment">Contribuir ahora</button>
 
 
                 </div>
 
 
                 <div class="hero-bottom-btns">
-                    <a class="btn btn-1" href="#">Compra el libro</a>
-                    <a class="btn btn-2" href="#">Comprar Amazon</a>
+                    <a class="btn btn-1 openShowcasePopupPayment" href="#">Compra el libro</a>
+                    <a class="btn btn-2" target="_blank" href="https://www.amazon.es/dp/B0C4MF777T">Comprar Amazon</a>
                 </div>
 
 
@@ -117,7 +181,7 @@
                                 <i class="fas fa-star"></i>
                             </p>
                             <p class="showbook-des">La literatura posmoderna es una corriente que ha desafiado las convenciones narrativas y ha llevado la experimentación a nuevos límites. En esta antología de relatos posmodernos, presentamos una selección de historias que representan algunos de los aspectos más interesantes de esta corriente literaria.</p>
-                            <button class="btn showbook-btn">Compra el libro</button>
+                            <button class="btn showbook-btn openShowcasePopupPayment">Compra el libro</button>
                         </div>
                 </div>
             </div>
@@ -269,15 +333,18 @@
 
 
 <script>
-// Code By Webdevtrick ( https://webdevtrick.com )
-$(function () { 
-  $('[data-toggle="tooltip"]').tooltip({trigger: 'manual'}).tooltip('show');
-});  
 
-  $(".progress-bar").each(function(){
-    each_bar_width = $(this).attr('aria-valuenow');
-    $(this).width(each_bar_width + '%');
-  });
+
+    $( ".openShowcasePopupPayment" ).click(function() {
+        $( ".latest-payement-popup-wraper" ).show();
+    });
+
+    $( ".latest-payement-popup-wraper i" ).click(function() {
+        $( ".latest-payement-popup-wraper" ).hide();
+    });
+
+
+
 
 
 </script>
